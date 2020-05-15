@@ -33,6 +33,7 @@
     "browser-sync-reuse-tab": "^1.0.3",
     "gulp-nodemon": "^2.4.2",
     "gulp-notify": "^3.2.0",
+    "gulp-sass-glob": "^1.1.0",
     "gulp-wait": "0.0.2",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
