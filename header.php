@@ -62,7 +62,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#"><?php the_custom_logo() ?></a>
+    <a class="navbar-brand" href="#"><?php the_custom_logo() ?> asd</a>
         <?php
         wp_nav_menu( array(
             'theme_location'    => 'fivh-M',
