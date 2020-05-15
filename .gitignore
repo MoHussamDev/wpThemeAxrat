@@ -26,5 +26,3 @@ wp-cli.local.yml
 
 # Node Modules 
 node_modules/
-gulpfile.js
-scss/

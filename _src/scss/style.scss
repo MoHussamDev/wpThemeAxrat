@@ -1,0 +1,29 @@
+
+@import '../../node_modules/bootstrap//scss/bootstrap.scss';
+@import './tools/fonts';
+
+@import './tools/normalize';
+
+@import './tools/vars';
+
+@import './tools/mainSite';
+
+@import './tools/breakPoints';
+
+
+// _
+
+@import './sections/header';
+@import './sections/footer';
+@import './sections/incs';
+
+#content{
+    #primary{
+        main{
+            
+            @import './sections/fh-slider';
+            @import './sections/fh-primaryContent';
+        }
+    }
+    
+}
