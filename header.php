@@ -65,7 +65,7 @@
     <a class="navbar-brand" href="#">فايف اتش</a>
         <?php
         wp_nav_menu( array(
-            'theme_location'    => 'primary',
+            'theme_location'    => 'fivh-M',
             'depth'             => 2,
             'container'         => 'div',
             'container_class'   => 'collapse navbar-collapse',
