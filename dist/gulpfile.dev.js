@@ -53,7 +53,7 @@ function pugFiles() {
 ; // Compile Sass & Inject Into Browser
 
 function scss() {
-  return gulp.src(['./scss/style.scss']).pipe(sassGlob()).pipe(plumber({
+  return gulp.src(['./_src/scss/style.scss']).pipe(sassGlob()).pipe(plumber({
     errorHandler: function errorHandler(err) {
       // display the error message
       console.log(err.message); // end the errored task
@@ -62,7 +62,7 @@ function scss() {
     }
   })).pipe(sass()).pipe(autoprefixer({
     cascade: false
-  })).pipe(concat('style.css')).pipe(gulp.dest('./dist/css')).pipe(browserSync.stream());
+  })).pipe(gulp.dest('./dist/css')).pipe(browserSync.stream());
 }
 
 ; // Clean the build folder
@@ -85,7 +85,7 @@ function watchFiles() {
     reloadDelay: 100
   });
   gulp.watch(['*.php', 'src/pug/**/*.pug']).on('change', browserSync.reload);
-  gulp.watch(['_src/scss/*', '_src/scss/**/*', '_src/scss/**/**/*'], scss).on('change', browserSync.reload);
+  gulp.watch(['./_src/scss/*', './_src/scss/**/*', './_src/scss/**/**/*'], scss).on('change', browserSync.reload);
 }
 
 ;

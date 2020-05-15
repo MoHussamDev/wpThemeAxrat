@@ -37,7 +37,7 @@ function pugFiles() {
 
 // Compile Sass & Inject Into Browser
 function scss() {
-    return gulp.src(['./scss/style.scss', ])
+    return gulp.src(['./_src/scss/style.scss', ])
         .pipe(sassGlob())
         .pipe(plumber({
             errorHandler: function(err) {
@@ -51,7 +51,6 @@ function scss() {
         .pipe(autoprefixer({
             cascade: false
         }))
-        .pipe(concat('style.css'))
         .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.stream());
 };
@@ -81,7 +80,7 @@ function watchFiles() {
 
     })
     gulp.watch(['*.php', 'src/pug/**/*.pug']).on('change', browserSync.reload);
-    gulp.watch(['_src/scss/*', '_src/scss/**/*', '_src/scss/**/**/*'], scss).on('change', browserSync.reload);
+    gulp.watch(['./_src/scss/*', './_src/scss/**/*', './_src/scss/**/**/*'], scss).on('change', browserSync.reload);
 };
 
 exports.clean = clean;
