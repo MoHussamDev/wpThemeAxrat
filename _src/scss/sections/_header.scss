@@ -1,4 +1,5 @@
 #topBar {
+    // background-color: $mainCol;
     background-color: $mainCol;
     direction: rtl;
     .f-main {
@@ -220,5 +221,26 @@
                 }
             }
         }
+    }
+}
+
+.dir {
+    direction: rtl;
+    #bs-example-navbar-collapse-1 {
+        justify-content: flex-end;
+    }
+    .custom-logo-link {
+        display: flex;
+        justify-content: flex-end;
+        @include media-breakpoint-up(md){
+            justify-content: flex-start;
+        }
+
+        img {
+            width: 35%;
+        }
+    }
+    #bs-example-navbar-collapse-1{
+        text-align: right;
     }
 }

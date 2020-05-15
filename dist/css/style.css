@@ -10316,6 +10316,37 @@ body {
                 -ms-flex-direction: row;
                 flex-direction: row; }
 
+.dir {
+  direction: rtl; }
+  .dir #bs-example-navbar-collapse-1 {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .dir .custom-logo-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    @media (min-width: 768px) {
+      .dir .custom-logo-link {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -moz-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; } }
+    .dir .custom-logo-link img {
+      width: 35%; }
+  .dir #bs-example-navbar-collapse-1 {
+    text-align: right; }
+
 .page-footer {
   background-color: #111111;
   direction: rtl; }
