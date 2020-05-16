@@ -16,20 +16,40 @@
           align-items:center;
           justify-content: flex-start;
           height:70vh;
+         @media (max-width:768px){
+          //  height: auto;
+         }
+         @include media-breakpoint-down(md){
+          height: auto;
+        }
         }
         .fh-contentBox{
-          width:80%;
-          // background-color: rgba(0 , 0, 0,0.5);
-          text-align: right;
+          width:100%;
+          padding-top: 2rem;
+          @include media-breakpoint-up(md){
+            width:80%;
+            // background-color: rgba(0 , 0, 0,0.5);
+            text-align: right;
+          }
         h1{
-          font-size:40px;
-          color: white;
-          font-weight: 500;
+         text-align: center;
+         font-size:40px;
+         color: white;
+         font-weight: 500;
+          @include media-breakpoint-up(md){
+            text-align: right;
+          }
         }
         p{
           font-size:12px;
           color: white;
-          width:50%;
+          width:95%;
+          text-align: center;
+          padding-top: 2rem;
+          @include media-breakpoint-up(md){
+            width:50%;
+            text-align: right;
+          }
         }
         }
       }

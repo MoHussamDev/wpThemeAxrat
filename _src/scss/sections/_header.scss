@@ -275,7 +275,10 @@
         }
 
         img {
-            width: 35%;
+            width: 20%;
+            @include media-breakpoint-up(md){
+                width: 35%;
+            }
         }
     }
     #bs-example-navbar-collapse-1{
