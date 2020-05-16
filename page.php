@@ -38,6 +38,9 @@ get_header();
 					case 'serviceCards':
 					include get_template_directory( ).'/acf_markup/serviceCards.php';		
 					break;
+					case 'headline': 
+					include get_template_directory( ).'/acf_markup/headline.php';
+					break;
 					default:
 					echo "No Content Here";
 
