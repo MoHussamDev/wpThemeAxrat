@@ -23,8 +23,10 @@ if(!empty( get_sub_field('custom_class'))){
         <div class="col-md-<?= $cols['value']?>">
             <div class="card">
                 <div class="image"><img src="<?=$image['url']?>" alt=""></div>
-                <div class="title"><h3><?= $title ?></h3> </div>
-                <div class="paragra"><p><?=  $para ?></p></div>
+                <div class="content">
+                    <div class="title"><h3><?= $title ?></h3> </div>
+                    <div class="paragra"><p><?=  $para ?></p></div>
+                </div>
             </div>
 </div>
         
