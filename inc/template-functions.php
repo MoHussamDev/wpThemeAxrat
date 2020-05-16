@@ -11,6 +11,14 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
+
+//  function debug_to_console( $data ) {
+//     if ( is_array( $data ) )
+//      $output = "<script>console.log( 'Debug Objects: JSON.parse(" . json_encode($data) . ")' );</script>";
+//      else
+//      $output = "<script>console.log( 'Debug Objects: " . $data . "' );</script>";
+//     echo $output;
+//     }
 function fiveh_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
