@@ -42,7 +42,7 @@
 						<div class="f-main-content">
 					
 
-						<ul class"">
+						<ul class="social-icons" >
 							<li><a href="<?php echo get_theme_mod('si_facebook') ?>"><i class="fab fa-facebook-f"></i></a></li>
 							<li><a href="<?php echo get_theme_mod('si_twitter') ?>"><i class="fab fa-twitter"></i></a></li>
 							<li><a href="<?php echo get_theme_mod('si_instagram') ?>"><i class="fab fa-instagram"></i></a></li>
@@ -57,7 +57,7 @@
 
 
 <nav class="navbar navbar-expand-md navbar-light bg-light dir"  role="navigation">
-  <div class="container">
+  <div class="container pr-0">
     <!-- Brand and toggle get grouped for better mobile display -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

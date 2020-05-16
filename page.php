@@ -32,6 +32,9 @@ get_header();
 					case 'primary_content':
 					include get_template_directory( ).'/acf_markup/primary_content.php';		
 					break;
+					case 'cards':
+					include get_template_directory( ).'/acf_markup/service_cards.php';		
+					break;
 					default:
 					echo "No Content Here";
 

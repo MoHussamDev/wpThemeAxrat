@@ -2,14 +2,47 @@
     // background-color: $mainCol;
     background-color: $mainCol;
     direction: rtl;
+    
     .f-main {
         display: flex;
         min-height: 35px;
+        :nth-child(1).f-main-wrapper{
+            @include media-breakpoint-down(md)
+            {
+                display: none;
+            }
+           
+        }
+        :nth-child(2).f-main-wrapper{
+            .f-main-content{
+
+                .social-icons{
+                    li{
+    
+                        margin-left: 1rem;
+                    }
+                }
+            }
+            @include media-breakpoint-down(md)
+            {
+                width: 100%;
+
+                .f-main-content{
+                    width: 100%;
+                    .social-icons{
+                        display: flex;
+                        width: 90%;
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
         &-wrapper {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             width: 50%;
+            
         }
         .right {
             justify-content: flex-end;
@@ -228,6 +261,11 @@
     direction: rtl;
     #bs-example-navbar-collapse-1 {
         justify-content: flex-end;
+        ul{
+            li{
+                margin-right: 1rem;
+            }
+        }
     }
     .custom-logo-link {
         display: flex;

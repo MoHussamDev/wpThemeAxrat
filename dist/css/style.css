@@ -9976,6 +9976,26 @@ body {
     display: -ms-flexbox;
     display: flex;
     min-height: 35px; }
+    @media (max-width: 991.98px) {
+      #topBar .f-main :nth-child(1).f-main-wrapper {
+        display: none; } }
+    #topBar .f-main :nth-child(2).f-main-wrapper .f-main-content .social-icons li {
+      margin-left: 1rem; }
+    @media (max-width: 991.98px) {
+      #topBar .f-main :nth-child(2).f-main-wrapper {
+        width: 100%; }
+        #topBar .f-main :nth-child(2).f-main-wrapper .f-main-content {
+          width: 100%; }
+          #topBar .f-main :nth-child(2).f-main-wrapper .f-main-content .social-icons {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 90%;
+            -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+            justify-content: space-around; } }
     #topBar .f-main-wrapper {
       display: -webkit-box;
       display: -webkit-flex;
@@ -10324,6 +10344,8 @@ body {
     -moz-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
+    .dir #bs-example-navbar-collapse-1 ul li {
+      margin-right: 1rem; }
   .dir .custom-logo-link {
     display: -webkit-box;
     display: -webkit-flex;
@@ -10351,26 +10373,28 @@ body {
   background-color: #111111;
   direction: rtl; }
   .page-footer img {
-    width: 80px;
-    height: auto; }
+    width: 180px;
+    height: auto;
+    margin-bottom: 1rem; }
   .page-footer .f-footer-menu ul {
     list-style: none; }
     .page-footer .f-footer-menu ul li {
-      font-size: 0.7rem !important;
+      font-size: 16px !important;
       color: white !important;
       margin-bottom: 0.5rem !important; }
   .page-footer p {
-    font-size: 0.7rem !important;
+    font-size: 14px !important;
     color: white !important;
     margin-bottom: 0.5rem !important; }
   .page-footer a {
     color: white !important;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 14px !important; }
   .page-footer a:hover {
     color: #7ed6df !important;
     text-decoration: none !important; }
   .page-footer h6 {
-    font-size: 0.85rem !important;
+    font-size: 16px !important;
     color: white !important; }
 
 .f-button {
