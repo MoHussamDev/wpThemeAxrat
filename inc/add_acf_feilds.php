@@ -3,6 +3,124 @@ require get_stylesheet_directory() . '/page-builder/config.php';
 
 
 if( function_exists('acf_add_local_field_group') ):
+    $spacing = array(
+        'key' => 'group_1',
+        'label' => 'spacing',
+        'name' => 'spacing',
+        'type' => 'group',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+            'width' => '',
+            'class' => '',
+            'id' => '',
+        ),
+        'layout' => 'block',
+        'sub_fields' => array(
+            array(
+                'key' => 'feild_1',
+                'label' => 'Margin Top',
+                'name' => 'margin_top',
+                'type' => 'select',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '50',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'choices' => array(
+                    'full' => 'full',
+                ),
+                'default_value' => array(
+                ),
+                'allow_null' => 0,
+                'multiple' => 0,
+                'ui' => 0,
+                'return_format' => 'value',
+                'ajax' => 0,
+                'placeholder' => '',
+            ),
+            array(
+                'key' => 'feild_2',
+                'label' => 'Margin Bottom',
+                'name' => 'margin_bottom',
+                'type' => 'select',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '50',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'choices' => array(
+                    'full' => 'full',
+                ),
+                'default_value' => array(
+                ),
+                'allow_null' => 0,
+                'multiple' => 0,
+                'ui' => 0,
+                'return_format' => 'value',
+                'ajax' => 0,
+                'placeholder' => '',
+            ),
+            array(
+                'key' => 'feild_3',
+                'label' => 'Padding Top',
+                'name' => 'padding_top',
+                'type' => 'select',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '50',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'choices' => array(
+                    'full' => 'full',
+                ),
+                'default_value' => array(
+                ),
+                'allow_null' => 0,
+                'multiple' => 0,
+                'ui' => 0,
+                'return_format' => 'value',
+                'ajax' => 0,
+                'placeholder' => '',
+            ),
+            array(
+                'key' => 'feild_4',
+                'label' => 'Padding Bottom',
+                'name' => 'padding_bottom',
+                'type' => 'select',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '50',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'choices' => array(
+                    'full' => 'full',
+                ),
+                'default_value' => array(
+                ),
+                'allow_null' => 0,
+                'multiple' => 0,
+                'ui' => 0,
+                'return_format' => 'value',
+                'ajax' => 0,
+                'placeholder' => '',
+            ),
+        ),
+    );
+
     $layout = array(
         'layout_5e59527f34f7e' => array(
             'key' => 'layout_5e59527f34f7e',
@@ -116,6 +234,7 @@ if( function_exists('acf_add_local_field_group') ):
                         ),
                     ),
                 ),
+            
             ),
             'min' => '',
             'max' => '',
@@ -313,6 +432,7 @@ if( function_exists('acf_add_local_field_group') ):
                         ),
                     ),
                 ),
+             
             ),
             'min' => '',
             'max' => '',
@@ -442,6 +562,7 @@ if( function_exists('acf_add_local_field_group') ):
                         ),
                     ),
                 ),
+              
             ),
             'min' => '',
             'max' => '',
@@ -701,7 +822,7 @@ if( function_exists('acf_add_local_field_group') ):
             'display' => 'row',
             'sub_fields' => array(
                 array(
-                    'key' => 'field_5ebfe2b5377ea',
+                    'key' => 'field_5ebfe2a5377ea',
                     'label' => 'custom class',
                     'name' => 'custom_class',
                     'type' => 'select',
@@ -791,6 +912,16 @@ if( function_exists('acf_add_local_field_group') ):
         ),
     );
 
+
+
+
+foreach( $layout as $key => $value){
+    $spacing['key'] = 'field_'.uniqid();
+     foreach( $spacing['sub_fields'] as $feil => $vals ){
+        $spacing['sub_fields'][$feil]['key'] = 'field_'.uniqid();
+    }
+    $layout[$key]['sub_fields'][count($layout[$key]['sub_fields'])] = $spacing;
+}
 foreach($customClasses as $key => $value){
     foreach($value['modules'] as $module){
         foreach( $layout as $keylay => $lay){
@@ -802,7 +933,10 @@ foreach($customClasses as $key => $value){
         }
     }
 }
-// debug_to_console(    $layout );
+
+
+
+
 $a = array(
 	'key' => 'group_5e5952706cc66',
 	'title' => 'content',

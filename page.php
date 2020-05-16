@@ -41,6 +41,9 @@ get_header();
 					case 'headline': 
 					include get_template_directory( ).'/page-builder/headline/headline.php';
 					break;
+					case 'hero': 
+					include get_template_directory( ).'/page-builder/hero/hero.php';
+					break;
 					default:
 					echo "No Content Here";
 

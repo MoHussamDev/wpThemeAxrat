@@ -1,4 +1,15 @@
-<section class="fh_slider">
+<?php  
+if(!empty(get_sub_field('custom_class'))){
+
+  $custom_class = implode(" ", get_sub_field('custom_class'));
+}else{
+  $custom_class = '';
+}
+
+;?>
+
+
+<section class=" fh_slider <?php $custom_class; ?>" >
 
 <div class="swiper-container">
           <div class="swiper-wrapper">

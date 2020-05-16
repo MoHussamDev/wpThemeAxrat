@@ -5,7 +5,7 @@
 $customClasses = array(
     't--lightBackground' => array(
         'name' => 'Light Background',
-        'modules' => array('slider')
+        'modules' => array('slider','primary_content')
     ),
     't--sa' => array(
         'name' => 'Light Background',
