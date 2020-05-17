@@ -1,8 +1,5 @@
 $xr-primary-color :#22a6b3;
-$xr-primary-hover-color: shade(#22a6b3, 20%);;
-
-
-
+$xr-primary-hover-color: shade($xr-primary-color, 20%);
 $xr-white: #fff;
 
 

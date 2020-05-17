@@ -148,7 +148,7 @@ if( function_exists('acf_add_local_field_group') ):
             'label' => 'slider',
             'display' => 'row',
             'sub_fields' => array(
-                array(
+                  array(
                     'key' => 'field_5ebfe366e0eee',
                     'label' => 'custom class',
                     'name' => 'custom_class',
@@ -732,8 +732,63 @@ if( function_exists('acf_add_local_field_group') ):
                             'rows' => '',
                             'new_lines' => '',
                         ),
+                        array(
+                            'key' => 'field_5ec1a650df593',
+                            'label' => 'type',
+                            'name' => 'type',
+                            'type' => 'radio',
+                            'instructions' => '',
+                            'required' => 1,
+                            'conditional_logic' => 0,
+                            'wrapper' => array(
+                                'width' => '',
+                                'class' => '',
+                                'id' => '',
+                            ),
+                            'choices' => array(
+                                0 => 'Normal',
+                                1 => 'Link',
+                            ),
+                            'allow_null' => 0,
+                            'other_choice' => 0,
+                            'default_value' => '',
+                            'layout' => 'vertical',
+                            'return_format' => 'value',
+                            'save_other_choice' => 0,
+                        ),
+                        array(
+                            'key' => 'field_5ec1a60adf592',
+                            'label' => 'Link',
+                            'name' => 'link',
+                            'type' => 'page_link',
+                            'instructions' => '',
+                            'required' => 1,
+                            'conditional_logic' => array(
+                                array(
+                                    array(
+                                        'field' => 'field_5ec1a650df593',
+                                        'operator' => '==',
+                                        'value' => '1',
+                                    ),
+                                ),
+                            ),
+                            'wrapper' => array(
+                                'width' => '',
+                                'class' => '',
+                                'id' => '',
+                            ),
+                            'post_type' => array(
+                                0 => 'page',
+                            ),
+                            'taxonomy' => '',
+                            'allow_null' => 0,
+                            'allow_archives' => 1,
+                            'multiple' => 0,
+                        ),
                     ),
-                ),
+                
+                    ),
+              
             ),
             'min' => '',
             'max' => '',
@@ -945,11 +1000,11 @@ foreach( $layout as $key => $value){
     $layout[$key]['sub_fields'][count($layout[$key]['sub_fields'])] = $spacing;
     $newkeyLayout++;
 }
+
 foreach($customClasses as $key => $value){
     foreach($value['modules'] as $module){
         foreach( $layout as $keylay => $lay){
             if($module === $lay['name']){
-               $lay['sub_fields'][0]['choices'][$key] = $value['name'];
                $layout[$keylay]['sub_fields'][0]['choices'][$key] =$value['name'];
               
             }

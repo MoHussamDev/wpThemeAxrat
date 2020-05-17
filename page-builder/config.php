@@ -11,5 +11,9 @@ $customClasses = array(
         'name' => 'Light Background',
         'modules' => array('slider','primary_content','cards','services','headline','hero')
     ),
+    'xr--tony-padding' => array(
+        'name' => 'Tony',
+        'modules' => array('hero')
+    ),
 
 );
