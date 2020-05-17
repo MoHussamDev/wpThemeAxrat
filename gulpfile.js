@@ -80,7 +80,7 @@ function watchFiles() {
 
     })
     gulp.watch(['*.php', 'src/pug/**/*.pug']).on('change', browserSync.reload);
-    gulp.watch(['./_src/scss/*', './_src/scss/**/*', './_src/scss/**/**/*','./page-builder/**/*'], scss).on('change', browserSync.reload);
+    gulp.watch(['./_src/scss/*', './_src/scss/**/*', './_src/scss/**/**/*','./page-builder/**/*','./header/__header.scss','./footer/__footer.scss'], scss).on('change', browserSync.reload);
 };
 
 exports.clean = clean;
