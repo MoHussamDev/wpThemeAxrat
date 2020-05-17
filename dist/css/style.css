@@ -10255,6 +10255,11 @@ body {
     font-size: 18px;
     text-align: center; }
 
+#headline {
+  text-align: right; }
+  #headline .h2 {
+    font-weight: 600; }
+
 #hero {
   background: var(--background-image);
   width: 100%;
