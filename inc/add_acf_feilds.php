@@ -977,7 +977,8 @@ $a = array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
-) ;    
+);    
+
 $a['fields'][0]['layouts'] = $layout ;
 
 acf_add_local_field_group($a);
