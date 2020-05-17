@@ -80,7 +80,7 @@ function watchFiles() {
 
     })
     gulp.watch(['*.php', 'src/pug/**/*.pug']).on('change', browserSync.reload);
-    gulp.watch(['./_src/scss/*', './_src/scss/**/*', './_src/scss/**/**/*'], scss).on('change', browserSync.reload);
+    gulp.watch(['./_src/scss/*', './_src/scss/**/*', './_src/scss/**/**/*','./page-builder/**/*'], scss).on('change', browserSync.reload);
 };
 
 exports.clean = clean;
