@@ -1,6 +1,6 @@
 #topBar {
-    // background-color: $mainCol;
-    background-color: $mainCol;
+    // background-color: $xr-primary-color;
+    background-color: $xr-primary-color;
     direction: rtl;
     
     .f-main {
@@ -56,7 +56,7 @@
             align-items: center;
             // margin-left:1rem;
             font-size: 11px;
-            color: $mainWhite;
+            color: $xr-white;
             font-weight: bold;
             text-transform: uppercase;
             ul {
@@ -68,7 +68,7 @@
                 height: 100%;
                 list-style: none;
                 li {
-                    background-color: $mainWhite;
+                    background-color: $xr-white;
                     width: 1.5rem;
                     height: 1.5rem;
                     margin-left: 0.2rem;
@@ -78,14 +78,14 @@
                     justify-content: center;
                     transition: all 0.2s ease;
                     &:hover {
-                        background-color: $hoverCol;
+                        background-color: $xr-primary-hover-color;
                         a {
-                            color: $mainWhite;
+                            color: $xr-white;
                         }
                     }
                     a {
                         text-decoration: none;
-                        color: $mainCol;
+                        color: $xr-primary-color;
                         i {
                             margin: 0;
                         }
@@ -151,7 +151,7 @@
                         }
                         &:before {
                             content: '';
-                            background-color: $mainCol;
+                            background-color: $xr-primary-color;
                             position: absolute;
                             height: 0;
                             width: 100%;
@@ -178,7 +178,7 @@
                                             height: 0;
                                         }
                                         a {
-                                            color: $mainCol;
+                                            color: $xr-primary-color;
                                         }
                                     }
                                 }
@@ -196,7 +196,7 @@
                             flex-direction: column;
                             align-items: center;
                             justify-content: center;
-                            color: $mainCol;
+                            color: $xr-primary-color;
                             text-align: center;
                             font-weight: 400;
                             font-size: 0.8rem;

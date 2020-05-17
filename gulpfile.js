@@ -59,10 +59,8 @@ function scss() {
 function clean(done) {
     console.log('-> Cleaning dist folder')
     del([
-        'dist',
-        'src/assets/css',
-        'src/assets/compJs',
-        'src/*.html'
+        './dist/css/style.css',
+
 
     ]);
     done()
@@ -80,7 +78,7 @@ function watchFiles() {
 
     })
     gulp.watch(['*.php', 'src/pug/**/*.pug']).on('change', browserSync.reload);
-    gulp.watch(['./_src/scss/*', './_src/scss/**/*', './_src/scss/**/**/*','./page-builder/**/*','./header/__header.scss','./footer/__footer.scss'], scss).on('change', browserSync.reload);
+    gulp.watch(['./_src/scss/*', './_src/scss/**/*', './_src/scss/**/**/*','./page-builder/**/*','./header/__header.scss','./footer/__footer.scss'], gulp.series(clean,scss)).on('change', browserSync.reload);
 };
 
 exports.clean = clean;

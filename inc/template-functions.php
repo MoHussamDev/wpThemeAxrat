@@ -47,7 +47,7 @@ add_action( 'wp_head', 'fiveh_pingback_header' );
 add_action('wp_enqueue_scripts', 'load_scripts', 12);
 
 function load_scripts() {
-	wp_enqueue_style( 'SiteStyle',get_template_directory_uri()."/dist/css/style.css");
+	wp_enqueue_style( 'SiteStyle',get_template_directory_uri()."/dist/css/style.css", array(), microtime());
 	wp_enqueue_style( 'slickStyle',get_template_directory_uri()."/dist/css/swiper.min.css");
 	wp_enqueue_script('fontawesome','https://kit.fontawesome.com/1b49ad937d.js', array(), '', true  );
 	wp_enqueue_script('jquery', get_template_directory_uri()."/dist/js/jquery.js", array(), '1.0.0', false  );

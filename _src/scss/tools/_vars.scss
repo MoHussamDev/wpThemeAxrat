@@ -1,7 +1,8 @@
-$mainCol :#22a6b3;
-$mainWhite: #fff;
-$hoverCol:#7ed6df;
-$dark : #111111;
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+  }
 
 
-
+  @function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+  }
