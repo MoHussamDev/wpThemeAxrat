@@ -2,9 +2,8 @@
 @import '../../node_modules/bootstrap//scss/bootstrap.scss';
 @import './tools/fonts';
 
-@import './tools/normalize';
 
-@import './tools/vars';
+@import './tools/mixins';
 
 @import './tools/mainSite';
 
