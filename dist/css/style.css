@@ -9966,6 +9966,42 @@ body, html, h1, h2, h3, h5, h6, p, span, a {
 body {
   background-color: #fff !important; }
 
+.xr-padding-top_full {
+  padding-top: 90px; }
+
+.xr-padding-top_half {
+  padding-top: 60px; }
+
+.xr-padding-top_full {
+  padding-top: 30px; }
+
+.xr-padding-bottom_full {
+  padding-bottom: 90px; }
+
+.xr-padding-bottom_half {
+  padding-bottom: 60px; }
+
+.xr-padding-bottom_full {
+  padding-bottom: 30px; }
+
+.xr-margin-bottom_full {
+  margin-bottom: 90px; }
+
+.xr-margin-bottom_half {
+  margin-bottom: 60px; }
+
+.xr-margin-bottom_full {
+  margin-bottom: 30px; }
+
+.xr-margin-top_full {
+  margin-top: 90px; }
+
+.xr-margin-top_half {
+  margin-top: 60px; }
+
+.xr-margin-top_full {
+  margin-top: 30px; }
+
 #topBar {
   background-color: #22a6b3;
   direction: rtl; }

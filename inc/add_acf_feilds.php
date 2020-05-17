@@ -32,9 +32,14 @@ if( function_exists('acf_add_local_field_group') ):
                     'id' => '',
                 ),
                 'choices' => array(
-                    'full' => 'full',
+                   'none' => 'Default [ No Margin]',
+                    'full' => 'Full',
+                    'half' => 'Half',
+                   'quarter' => 'Quarter',
+                
                 ),
                 'default_value' => array(
+                    'none' => 'Default [ No Margin]',
                 ),
                 'allow_null' => 0,
                 'multiple' => 0,
@@ -57,10 +62,15 @@ if( function_exists('acf_add_local_field_group') ):
                     'id' => '',
                 ),
                 'choices' => array(
-                    'full' => 'full',
-                ),
-                'default_value' => array(
-                ),
+                    'none' => 'Default [ No Margin]',
+                     'full' => 'Full',
+                     'half' => 'Half',
+                    'quarter' => 'Quarter',
+                 
+                 ),
+                 'default_value' => array(
+                     'none' => 'Default [ No Margin]',
+                 ),
                 'allow_null' => 0,
                 'multiple' => 0,
                 'ui' => 0,
@@ -82,10 +92,15 @@ if( function_exists('acf_add_local_field_group') ):
                     'id' => '',
                 ),
                 'choices' => array(
-                    'full' => 'full',
-                ),
-                'default_value' => array(
-                ),
+                    'none' => 'Default [ No Padding]',
+                     'full' => 'Full',
+                     'half' => 'Half',
+                    'quarter' => 'Quarter',
+                 
+                 ),
+                 'default_value' => array(
+                     'none' => 'Default [ No Padding]',
+                 ),
                 'allow_null' => 0,
                 'multiple' => 0,
                 'ui' => 0,
@@ -107,10 +122,15 @@ if( function_exists('acf_add_local_field_group') ):
                     'id' => '',
                 ),
                 'choices' => array(
-                    'full' => 'full',
-                ),
-                'default_value' => array(
-                ),
+                    'none' => 'Default [ No Padding]',
+                     'full' => 'Full',
+                     'half' => 'Half',
+                    'quarter' => 'Quarter',
+                 
+                 ),
+                 'default_value' => array(
+                     'none' => 'Default [ No Padding]',
+                 ),
                 'allow_null' => 0,
                 'multiple' => 0,
                 'ui' => 0,
@@ -914,13 +934,16 @@ if( function_exists('acf_add_local_field_group') ):
 
 
 
-
+$newkeyLayout = 2000;
+$newkeyFeild = 3000;
 foreach( $layout as $key => $value){
-    $spacing['key'] = 'field_'.uniqid();
+    $spacing['key'] = 'field_'.$newkeyLayout;
      foreach( $spacing['sub_fields'] as $feil => $vals ){
-        $spacing['sub_fields'][$feil]['key'] = 'field_'.uniqid();
+        $spacing['sub_fields'][$feil]['key'] = 'field_'.$newkeyFeild;
+        $newkeyFeild++;
     }
     $layout[$key]['sub_fields'][count($layout[$key]['sub_fields'])] = $spacing;
+    $newkeyLayout++;
 }
 foreach($customClasses as $key => $value){
     foreach($value['modules'] as $module){

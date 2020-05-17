@@ -9,7 +9,7 @@ $customClasses = array(
     ),
     't--sa' => array(
         'name' => 'Light Background',
-        'modules' => array('slider','primary_content','cards','services','headline')
+        'modules' => array('slider','primary_content','cards','services','headline','hero')
     ),
 
 );
