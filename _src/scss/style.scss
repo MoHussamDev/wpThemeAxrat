@@ -15,11 +15,22 @@
 
 // _
 
-@import './sections/header';
-@import './sections/footer';
-@import './sections/incs';
-@import './sections/service_cards';
-@import './sections/fekra_cards';
+// @import './sections/header';
+// @import './sections/footer';
+// @import './sections/incs';
+// @import './sections/service_cards';
+// @import './sections/fekra_cards';
+//header && footer 
+@import './tools/spacing';
+@import '../../header/__header';
+@import '../../footer/__footer';
+
+// Builder Sass 
+@import '../../page-builder/cards/__cards';
+@import '../../page-builder/headline/__headline';
+@import '../../page-builder/hero/__hero';
+@import '../../page-builder/primary_content/__primary-content';
+@import '../../page-builder/slider/__slider';
 
 
 

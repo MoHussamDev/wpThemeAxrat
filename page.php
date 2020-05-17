@@ -27,19 +27,22 @@ get_header();
 					the_row();
 				switch(get_row_layout()){
 					case 'slider':
-				    include get_template_directory( ).'/acf_markup/slider.php';
+				    include get_template_directory( ).'/page-builder/slider/slider.php';
 					break;
 					case 'primary_content':
-					include get_template_directory( ).'/acf_markup/primary_content.php';		
+					include get_template_directory( ).'/page-builder/primary_content/primary_content.php';		
 					break;
 					case 'cards':
-					include get_template_directory( ).'/acf_markup/cards.php';		
+					include get_template_directory( ).'/page-builder/cards/cards.php';		
 					break;
-					case 'serviceCards':
-					include get_template_directory( ).'/acf_markup/serviceCards.php';		
+					case 'services':
+					include get_template_directory( ).'/page-builder/services/services.php';		
 					break;
 					case 'headline': 
-					include get_template_directory( ).'/acf_markup/headline.php';
+					include get_template_directory( ).'/page-builder/headline/headline.php';
+					break;
+					case 'hero': 
+					include get_template_directory( ).'/page-builder/hero/hero.php';
 					break;
 					default:
 					echo "No Content Here";
@@ -49,31 +52,6 @@ get_header();
 				endif;			
 			
 		}
-					// echo true;
-
-					// if (have_rows('builder')):
-
-					// 	while ( have_rows('builder') ) : the_row();
-					// 	if(get_row_layout() === 'Slider'):
-					// 	echo get_row_layout();
-						
-					
-					// endif;
-
-						
-					// endwhile;
-
-					// endif;
-				// while(have_rows('page_builder')) : the_row();
-				// 	// var_dump(get_row_layout());
-				
-				// endwhile;
-			
-				
-
-	
-
-		// endwhile; // End of the loop.
 		?>
 		
 	

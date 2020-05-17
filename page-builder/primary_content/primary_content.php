@@ -1,13 +1,15 @@
+<?php  
+if(!empty(get_sub_field('custom_class'))){
 
-<?php
-if(!empty( get_sub_field('custom_class'))){
-
-    $class = get_sub_field('custom_class');
-    $class = join(' ' , $class);  
+  $custom_class = implode(" ", get_sub_field('custom_class'));
+}else{
+  $custom_class = '';
 }
 
-?> 
-<section id="primaryContent" class="<?= $class ?>">
+;?>
+
+
+<section id="primaryContent" class="<?= $custom_class ?>">
  <div class="container">
     <div class="row ">
 

@@ -154,6 +154,9 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
+// add Custom Feild 
+
+require get_template_directory() . '/inc/add_acf_feilds.php';
 /**
  * Load Jetpack compatibility file.
  */
@@ -192,3 +195,4 @@ function reset_editor()
 }
 
 add_action("init","reset_editor");
+
