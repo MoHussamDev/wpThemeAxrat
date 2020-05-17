@@ -12,14 +12,6 @@
 @import './tools/colors';
 
 
-// 
-
-// @import './sections/header';
-// @import './sections/footer';
-// @import './sections/incs';
-// @import './sections/service_cards';
-// @import './sections/fekra_cards';
-//header && footer 
 
 @import './tools/spacing';
 @import '../../header/__header';
@@ -38,8 +30,7 @@
     #primary{
         main{
             
-            @import './sections/fh-slider';
-            @import './sections/fh-primaryContent';
+
         }
     }
     

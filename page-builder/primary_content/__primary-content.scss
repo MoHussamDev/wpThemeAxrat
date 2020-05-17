@@ -1,6 +1,4 @@
 #primaryContent{
-    padding-top: 5rem;
-    padding-bottom: 4rem;
     &.background-dark{
         background-color: #f9f9f9;
     }
@@ -16,12 +14,10 @@
                       align-items:flex-end;
                       text-align:right;
                       h2{
-                          margin-bottom:2rem;
                           font-weight:bold;
                       }
                       p{
                           text-align:right;
-                          // width: 80%;
                        
                       }
   
