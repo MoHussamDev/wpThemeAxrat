@@ -71,7 +71,8 @@ add_filter( 'script_loader_tag', 'add_attribs_to_scripts', 10, 3 );
 
 
 function xrat_mime_types($mimes) {
-	$mimes['svg'] = 'image/svg';
+	$mimes['svg']  = 'image/svg+xml';
+    $mimes['svgz'] = 'image/svg+xml';
 	return $mimes;
 }
 add_filter('upload_mimes', 'xrat_mime_types');
