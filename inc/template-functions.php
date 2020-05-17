@@ -68,3 +68,10 @@ return $tag;
 } 
 add_filter( 'script_loader_tag', 'add_attribs_to_scripts', 10, 3 );
 // add_filter('acf/settings/show_admin', '__return_false');
+
+
+function xrat_mime_types($mimes) {
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter('upload_mimes', 'xrat_mime_types');
