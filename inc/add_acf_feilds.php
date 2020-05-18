@@ -822,6 +822,38 @@ if( function_exists('acf_add_local_field_group') ):
                             'mime_types' => 'png,jpg,jpeg,gif,svg',
                         ),
                         array(
+                            'key' => 'field_5abf55fe270e98',
+                            'label' => 'Hover Image',
+                            'name' => 'hover_image',
+                            'type' => 'image',
+                            'instructions' => '',
+                            'required' => 1,
+                            'conditional_logic' => array(
+                                array(
+                                    array(
+                                        'field' => 'field_5e595272d8138',
+                                        'operator' => '!=empty',
+                                        'value' => '',
+                                    ),
+                                ),
+                            ),
+                            'wrapper' => array(
+                                'width' => '',
+                                'class' => '',
+                                'id' => '',
+                            ),
+                            'return_format' => 'array',
+                            'preview_size' => 'thumbnail',
+                            'library' => 'all',
+                            'min_width' => '',
+                            'min_height' => '',
+                            'min_size' => '',
+                            'max_width' => '',
+                            'max_height' => '',
+                            'max_size' => '',
+                            'mime_types' => 'png,jpg,jpeg,gif,svg',
+                        ),
+                        array(
                             'key' => 'field_5ebf4fe270e99',
                             'label' => 'title',
                             'name' => 'title',
