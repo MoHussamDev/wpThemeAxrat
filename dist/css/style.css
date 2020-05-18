@@ -10359,3 +10359,8 @@ body {
           .fh_slider .swiper-slide .fh-contentBox p {
             width: 50%;
             text-align: right; } }
+
+#logos {
+  height: 200px; }
+  #logos .swiper-slide img {
+    width: 150px; }
