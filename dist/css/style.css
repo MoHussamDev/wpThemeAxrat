@@ -10327,6 +10327,16 @@ a {
       background: #22a6b3;
       bottom: -10px;
       margin-left: -4.4rem; }
+  #headline h3 {
+    position: relative; }
+    #headline h3:after {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 70px;
+      background: #22a6b3;
+      bottom: -10px;
+      margin-left: -4.4rem; }
 
 #hero {
   background: var(--background-image);
@@ -10466,20 +10476,55 @@ a {
   -moz-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  position: relative; }
   #serviceCards .card .image {
-    height: 100px;
-    width: 100px;
-    background-color: red; }
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    background-color: white;
+    top: -52px;
+    right: -15px;
+    border: 4px solid #22a6b3;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     #serviceCards .card .image div {
       background-image: var(--icon);
-      width: 100%;
-      height: 100%;
+      width: 70%;
+      height: 70%;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover; }
   #serviceCards .card .content {
     text-align: right;
-    padding-right: 0.5rem; }
-  #serviceCards .card:hover .image div {
-    background-image: var(--icon-hover); }
+    padding-right: 0.5rem;
+    background-color: #f4fbfb; }
+    #serviceCards .card .content .title h3 {
+      font-size: 28px;
+      position: relative;
+      top: -50px;
+      right: 4.5rem; }
+    #serviceCards .card .content .paragra {
+      padding-right: 3rem;
+      padding-left: 3rem;
+      padding-bottom: 2rem; }
+  #serviceCards .card:hover .image {
+    background: #22a6b3; }
+    #serviceCards .card:hover .image div {
+      background-image: var(--icon-hover); }

@@ -17,4 +17,21 @@
         }
         
     }
+   
+    h3{
+        position: relative;
+
+        &:after{
+            content:'';
+          position: absolute;
+          height: 4px;
+          width: 70px;
+          background:$xr-primary-color;
+          bottom: -10px;
+          margin-left: -4.4rem;
+        
+
+        }
+        
+    }
 }

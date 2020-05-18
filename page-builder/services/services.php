@@ -59,15 +59,15 @@ if(have_rows('spacing')){
         <?php
         if(!$type){
     ?> 
-            <div class="card">
-                <div class="image"><div style="--icon:url('<?= $image['url']?>'); --icon-hover:url('<?= $hover['url']  ?>');" alt=""></div></div>
+    
+    <div href="<?= $link ?>" class="card">
+                <div class="image"><div style="--icon:url('<?= $image['url']  ?>'); --icon-hover:url('<?= $hover['url']  ?>');" alt=""></div></div>
                 <div class="content">
                     <div class="title"><h3><?= $title ?></h3> </div>
-                </div>
-                <div class="content">
                     <div class="paragra"><p><?=  $para ?></p></div>
                 </div>
-            </div>
+        </div>
+
             <?php }else{?>
 
                 <a href="<?= $link ?>" class="card">
