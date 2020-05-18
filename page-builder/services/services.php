@@ -54,9 +54,11 @@ if(have_rows('spacing')){
         if(!$type){
     ?>
             <div class="card">
-                <div class="image"><img src="<?=$image['url']?>" alt=""></div>
-                <div class="content">
+                <div class="f-content">
+                    <div class="image"><img src="<?=$image['url']?>" alt=""></div>
                     <div class="title"><h3><?= $title ?></h3> </div>
+                </div>
+                <div class="content">
                     <div class="paragra"><p><?=  $para ?></p></div>
                 </div>
             </div>
