@@ -1,6 +1,9 @@
 #primaryContent{
-    &.background-dark{
-        background-color: #f9f9f9;
+
+       
+    &.xr--lightBackground{
+        background-color: $xr-primary-tint-color;
+        
     }
               #inner-wrapper{
                   img{
@@ -17,8 +20,7 @@
                           font-weight:bold;
                       }
                       p{
-                          text-align:right;
-                       
+                          text-align:right;                        
                       }
   
                   }
