@@ -42,9 +42,19 @@ p{
         line-height: 30px;
       }
     @include media-breakpoint-up(lg){
-        font-size: 21px;
+        font-size: 18px;
         line-height: 32px;
       }
+}
+li{
+    font-size: 18px;
+    line-height: 30px;
+}
+a{
+    font-size: 18px;
+    line-height: 30px;
+    color: $xr-primary-color;;
+
 }
 
 
