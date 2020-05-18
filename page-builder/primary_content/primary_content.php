@@ -34,7 +34,6 @@ if(have_rows('spacing')){
 <section id="primaryContent" class="<?= $custom_class ?> <?= $spacing ?>">
  <div class="container">
     <div class="row ">
-
         <?php 
     if(have_rows('columns')){
         while(have_rows('columns')){
@@ -44,9 +43,22 @@ if(have_rows('spacing')){
             $custom_class = get_sub_field('custom_class');
             $wysiwyg = get_sub_field('wysiwyg');
             $image = get_sub_field('image');
-            
+            $s_padding_top ='xr-padding-top_';
+            $s_padding_bottom ='xr-padding-bottom_'; 
+            if(have_rows('spacing_content')){
+              while(have_rows('spacing_content')){
+                the_row();
+
+                $s_padding_top = $s_padding_top.get_sub_field('padding_top');
+                $s_padding_bottom = $s_padding_bottom.get_sub_field('padding_bottom');
+          
+                };
+                
+                $spacing_bars = implode(" ", array($s_padding_top,$s_padding_bottom));
+            };
+
             ?>
-                <div id="inner-wrapper"class="col-md-<?=$width?> ">
+                <div id="inner-wrapper"class="col-md-<?=$width?> <?=$spacing_bars?> ">
                 <?php
                 if($contentType === "wysiwyg"){   
                ?>
