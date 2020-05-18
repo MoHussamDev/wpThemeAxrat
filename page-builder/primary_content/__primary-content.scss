@@ -1,6 +1,9 @@
 #primaryContent{
-    &.background-dark{
-        background-color: #f9f9f9;
+
+       
+    &.xr--lightBackground{
+        background-color: $xr-primary-tint-color;
+       
     }
               #inner-wrapper{
                   img{
@@ -13,15 +16,41 @@
                       flex-direction: column;
                       align-items:flex-end;
                       text-align:right;
-                      h2{
+                      h3{
                           font-weight:bold;
+                          position: relative;
+                          padding-bottom: 1rem;
+                          &:before{
+                              content:'';
+                            position: absolute;
+                            height: 4px;
+                            width: 35px;
+                            background:$xr-primary-color;
+                            bottom: 5px;
+                            right: 0;
+
+                          }
                       }
+
+
                       p{
-                          text-align:right;
-                       
+                          text-align:right;                        
                       }
-  
+                      .check-list{
+                          list-style: none;
+                          position:relative;
+                          li{
+                          &:before{
+                            content: "\f14a";
+                            position: absolute;
+                            right: 0;
+                            font-size:28px;
+                            color: $xr-primary-color;
+                            font-weight: 900;
+                            font-family: "Font Awesome 5 Free"
+                          }
+                        }
+                    }                   
                   }
-    
       }
       }
