@@ -1144,8 +1144,8 @@ if( function_exists('acf_add_local_field_group') ):
             'min' => '',
             'max' => '',
         ),
-        'layout_5e59527f34f7e' => array(
-            'key' => 'layout_5e59527f34f7e',
+        'layout_5a59527f35f7e' => array(
+            'key' => 'layout_5a59527f34f7e',
             'name' => 'logos',
             'label' => 'logos',
             'display' => 'row',
