@@ -33,7 +33,7 @@ if(have_rows('spacing')){
 <section id="logos" class=" <?php $custom_class; ?> <?=  $spacing ?>" >
 <div class="container">
 
-    <div class="swiper-container">
+    <div class="swiper-container swiper1">
         <div class="swiper-wrapper">
             <?php 
   if( have_rows('slide') ):
@@ -61,13 +61,12 @@ if(have_rows('spacing')){
   </div>
   </section>
   <script>
-var swiper = new Swiper('.swiper-container',{
+var swiper = new Swiper('.swiper1',{
 autoplay: {
 delay: 3000,
 },
-slidesPerView: 4,
+slidesPerView: 5,
       spaceBetween: 30,
-      centeredSlides: true,
 });
 </script> 
 <?php 
