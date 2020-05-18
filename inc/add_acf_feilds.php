@@ -1106,7 +1106,7 @@ if( function_exists('acf_add_local_field_group') ):
                     ),
                     'collapsed' => '',
                     'min' => 1,
-                    'max' => 4,
+                    'max' => 20,
                     'layout' => 'row',
                     'button_label' => 'Add Slide',
                     'sub_fields' => array(
