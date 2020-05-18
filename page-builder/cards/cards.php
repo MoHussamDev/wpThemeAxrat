@@ -36,19 +36,33 @@ if(have_rows('spacing')){
             the_row();
             $image = get_sub_field('image');
             $title = get_sub_field('title');
+            $type = get_sub_field('type');
+            if($type){
+              $link = get_sub_field('link');
+              }
             ?>  
+        <?php 
+        if(!$type){
+
         
+        ?>
         <div class="col-md-<?= $cols['value']?>">
             <div class="card">
                 <div class="image"><img src="<?=$image['url']?>" alt=""></div>
                 <div class="title"><h3><?= $title ?></h3> </div>
             </div>
-</div>
-        
-
+          </div>
+          <?php }else{?>
+            
+            <div class="col-md-<?= $cols['value']?>">
+            <a href="<?=$link ?>" class="card">
+                <div class="image"><img src="<?=$image['url']?>" alt=""></div>
+                <div class="title"><h3><?= $title ?></h3> </div>
+          </a>
+          </div>
         <?php
         }
-
+      }
     ?>
 </div>
 </div>

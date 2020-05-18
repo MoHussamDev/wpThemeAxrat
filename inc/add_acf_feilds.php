@@ -657,6 +657,59 @@ if( function_exists('acf_add_local_field_group') ):
                             'append' => '',
                             'maxlength' => '',
                         ),
+                        array(
+                            'key' => 'field_5ec1a650df593',
+                            'label' => 'type',
+                            'name' => 'type',
+                            'type' => 'radio',
+                            'instructions' => '',
+                            'required' => 1,
+                            'conditional_logic' => 0,
+                            'wrapper' => array(
+                                'width' => '',
+                                'class' => '',
+                                'id' => '',
+                            ),
+                            'choices' => array(
+                                0 => 'Normal',
+                                1 => 'Link',
+                            ),
+                            'allow_null' => 0,
+                            'other_choice' => 0,
+                            'default_value' => '',
+                            'layout' => 'vertical',
+                            'return_format' => 'value',
+                            'save_other_choice' => 0,
+                        ),
+                        array(
+                            'key' => 'field_5ec1a60adf592',
+                            'label' => 'Link',
+                            'name' => 'link',
+                            'type' => 'page_link',
+                            'instructions' => '',
+                            'required' => 1,
+                            'conditional_logic' => array(
+                                array(
+                                    array(
+                                        'field' => 'field_5ec1a650df593',
+                                        'operator' => '==',
+                                        'value' => '1',
+                                    ),
+                                ),
+                            ),
+                            'wrapper' => array(
+                                'width' => '',
+                                'class' => '',
+                                'id' => '',
+                            ),
+                            'post_type' => array(
+                                0 => 'page',
+                            ),
+                            'taxonomy' => '',
+                            'allow_null' => 0,
+                            'allow_archives' => 1,
+                            'multiple' => 0,
+                        ),
                     ),
                 ),
               
@@ -683,11 +736,8 @@ if( function_exists('acf_add_local_field_group') ):
                         'class' => '',
                         'id' => '',
                     ),
-                    'choices' => array(
-                        'cs1' => 'cs1',
-                    ),
-                    'default_value' => array(
-                    ),
+                    'choices' => array(),
+                    'default_value' => array(),
                     'allow_null' => 0,
                     'multiple' => 1,
                     'ui' => 1,
