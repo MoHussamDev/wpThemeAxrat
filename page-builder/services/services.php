@@ -40,9 +40,15 @@ if(have_rows('spacing')){
         while(have_rows('card')){
             the_row();
             $image = get_sub_field('image');
+            $hover = get_sub_field('image');
             $title = get_sub_field('title');
             $para = get_sub_field('paragraph');
             $type = get_sub_field('type');
+            if(get_sub_field('hover_image')){
+
+                $hover = get_sub_field('hover_image');
+            }
+            
             if($type){
             $link = get_sub_field('link');
             }
@@ -52,9 +58,9 @@ if(have_rows('spacing')){
         <div class="col-md-<?= $cols['value']?>">
         <?php
         if(!$type){
-    ?>
+    ?> 
             <div class="card">
-                <div class="image"><img src="<?=$image['url']?>" alt=""></div>
+                <div class="image"><div style="--icon:url('<?= $image['url']?>'); --icon-hover:url('<?= $hover['url']  ?>');" alt=""></div></div>
                 <div class="content">
                     <div class="title"><h3><?= $title ?></h3> </div>
                     <div class="paragra"><p><?=  $para ?></p></div>
@@ -63,7 +69,7 @@ if(have_rows('spacing')){
             <?php }else{?>
 
                 <a href="<?= $link ?>" class="card">
-                <div class="image"><img src="<?=$image['url']?>" alt=""></div>
+                <div class="image"><div style="--icon:url('<?= $image['url']  ?>'); --icon-hover:url('<?= $hover['url']  ?>');" alt=""></div></div>
                 <div class="content">
                     <div class="title"><h3><?= $title ?></h3> </div>
                     <div class="paragra"><p><?=  $para ?></p></div>
