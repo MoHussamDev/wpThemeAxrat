@@ -9878,15 +9878,9 @@ a {
       #topBar .f-main :nth-child(1).f-main-wrapper {
         display: none; } }
     #topBar .f-main :nth-child(2).f-main-wrapper .f-main-content .social-icons li {
-<<<<<<< HEAD
       margin-right: 1rem; }
       #topBar .f-main :nth-child(2).f-main-wrapper .f-main-content .social-icons li a i {
         font-size: 14px; }
-=======
-      margin-left: 1rem; }
-      #topBar .f-main :nth-child(2).f-main-wrapper .f-main-content .social-icons li a {
-        font-size: 14px !important; }
->>>>>>> 71c31a556dfbf4a70f90e60ab1a43036568b5c53
     @media (max-width: 991.98px) {
       #topBar .f-main :nth-child(2).f-main-wrapper {
         width: 100%; }
@@ -10005,7 +9999,7 @@ a {
 .admin-bar #navigation {
   top: 30px !important; }
   .admin-bar #navigation #bs-example-navbar-collapse-1 #menu-main {
-    margin: 0 0 0em 3em !important; }
+    margin: 0 0 0em 0em !important; }
 
 #navigation {
   position: -webkit-sticky;
@@ -10323,6 +10317,8 @@ a {
   border: 0; }
   #cards .card .image {
     text-align: center; }
+    #cards .card .image img {
+      width: 138px; }
   #cards .card .title h3 {
     color: black;
     text-align: right;
@@ -10474,7 +10470,18 @@ a {
             text-align: right; } }
 
 #logos {
-  height: 200px; }
+  height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #f4fbfb; }
   #logos .swiper-slide img {
     width: 150px; }
 
@@ -10492,8 +10499,9 @@ a {
   -moz-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-  margin-bottom: 1.5rem;
-  position: relative; }
+  margin-bottom: 5rem;
+  position: relative;
+  height: 250px; }
   #serviceCards .card .image {
     height: 80px;
     width: 80px;

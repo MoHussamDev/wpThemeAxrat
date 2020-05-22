@@ -1,5 +1,8 @@
 #logos{
     height: 200px;
+    display: flex;
+    align-items: center;
+    background: #f4fbfb;
     .swiper-slide{
      img{
          width: 150px;
