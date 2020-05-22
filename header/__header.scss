@@ -16,11 +16,18 @@
 
                 .social-icons{
                     li{
+<<<<<<< HEAD
                         margin-right: 1rem;
                         a{
                             i{
                                 font-size: 14px;
                             }
+=======
+    
+                        margin-left: 1rem;
+                        a{
+                            font-size:14px !important;
+>>>>>>> 71c31a556dfbf4a70f90e60ab1a43036568b5c53
                         }
                     }
                 }
@@ -56,15 +63,13 @@
             height: 100%;
             display: flex;
             align-items: center;
-            // margin-left:1rem;
             font-size: 11px;
             color: $xr-white;
             font-weight: bold;
             text-transform: uppercase;
             ul {
                 margin: 0;
-                // padding-left:1rem;
-                // padding-right:1rem;
+
                 display: flex;
                 align-items: center;
                 height: 100%;

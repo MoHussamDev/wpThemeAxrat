@@ -9878,9 +9878,15 @@ a {
       #topBar .f-main :nth-child(1).f-main-wrapper {
         display: none; } }
     #topBar .f-main :nth-child(2).f-main-wrapper .f-main-content .social-icons li {
+<<<<<<< HEAD
       margin-right: 1rem; }
       #topBar .f-main :nth-child(2).f-main-wrapper .f-main-content .social-icons li a i {
         font-size: 14px; }
+=======
+      margin-left: 1rem; }
+      #topBar .f-main :nth-child(2).f-main-wrapper .f-main-content .social-icons li a {
+        font-size: 14px !important; }
+>>>>>>> 71c31a556dfbf4a70f90e60ab1a43036568b5c53
     @media (max-width: 991.98px) {
       #topBar .f-main :nth-child(2).f-main-wrapper {
         width: 100%; }

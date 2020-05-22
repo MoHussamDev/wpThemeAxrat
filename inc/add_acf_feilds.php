@@ -3,6 +3,94 @@ require get_stylesheet_directory() . '/page-builder/config.php';
 
 
 if( function_exists('acf_add_local_field_group') ):
+    $projects =   array(
+        'key' => 'group_5ec563cc02f68',
+        'title' => 'gallery',
+        'fields' => array(
+            array(
+                'key' => 'field_5ec563cf9274a',
+                'label' => 'Project Data',
+                'name' => 'project_data',
+                'type' => 'group',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'layout' => 'block',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_5ec564deb5bdd',
+                        'label' => 'images',
+                        'name' => 'images',
+                        'type' => 'gallery',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'return_format' => 'array',
+                        'preview_size' => 'medium',
+                        'insert' => 'append',
+                        'library' => 'all',
+                        'min' => 1,
+                        'max' => '',
+                        'min_width' => '',
+                        'min_height' => '',
+                        'min_size' => '',
+                        'max_width' => '',
+                        'max_height' => '',
+                        'max_size' => '',
+                        'mime_types' => '',
+                    ),
+                    array(
+                        'key' => 'field_5ec564fbb5bde',
+                        'label' => 'Project Description',
+                        'name' => 'project_description',
+                        'type' => 'textarea',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'default_value' => '',
+                        'placeholder' => 'Project Description',
+                        'maxlength' => '',
+                        'rows' => '',
+                        'new_lines' => '',
+                    ),
+                ),
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'projects',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => array(
+            0 => 'the_content',
+        ),
+        'active' => true,
+        'description' => '',
+    );
     $spacing = array(
         'key' => 'group_1',
         'label' => 'spacing',
@@ -140,7 +228,6 @@ if( function_exists('acf_add_local_field_group') ):
             ),
         ),
     );
-
     $layout = array(
         'layout_5e59527f34f7e' => array(
             'key' => 'layout_5e59527f34f7e',
@@ -1298,5 +1385,10 @@ $a = array(
 $a['fields'][0]['layouts'] = $layout ;
 
 acf_add_local_field_group($a);
+acf_add_local_field_group( $projects);
 
 endif;
+
+
+    
+  
