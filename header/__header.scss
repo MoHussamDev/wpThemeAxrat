@@ -1,8 +1,7 @@
 #topBar {
     // background-color: $xr-primary-color;
     background-color: $xr-primary-color;
-    direction: rtl;
-    
+    direction: rtl;    
     .f-main {
         display: flex;
         min-height: 35px;
@@ -11,15 +10,18 @@
             {
                 display: none;
             }
-           
         }
         :nth-child(2).f-main-wrapper{
             .f-main-content{
 
                 .social-icons{
                     li{
-    
-                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        a{
+                            i{
+                                font-size: 14px;
+                            }
+                        }
                     }
                 }
             }
@@ -104,6 +106,11 @@
 .admin-bar{
     #navigation {
         top: 30px !important;
+        #bs-example-navbar-collapse-1{
+            #menu-main{
+                margin: 0 0 0em 3em !important;
+            }
+        }
     }
 }
 #navigation {
@@ -112,6 +119,11 @@
     height: 72px;
     z-index: 50000000;
     background: white;
+    .row{
+        width: 100%;
+        margin: 0;
+    }
+   
     .f-main {
         display: flex;
         min-height: 70px;
@@ -177,6 +189,7 @@
                                 right: 0;
                                 opacity: 1;
                                 ul {
+                                    
                                     li {
                                         &:before {
                                             height: 0;
@@ -286,6 +299,13 @@
         }
     }
     #bs-example-navbar-collapse-1{
+        
         text-align: right;
+        
+            #menu-main{
+                margin: 0 !important;
+                background: white;
+            }
+        
     }
 }

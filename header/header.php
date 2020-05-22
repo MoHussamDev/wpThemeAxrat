@@ -12,7 +12,6 @@
 <body <?php body_class(); ?>>
 
 <div id="page" class="site">
-
 		<div id="topBar" class="container-fluid">
 			<div class="f-main container">
 					<div class="f-main-wrapper">
@@ -27,7 +26,6 @@
 					</div>
 					<div class="f-main-wrapper right">
 						<div class="f-main-content">
-					
 
 						<ul class="social-icons" >
 							<li><a href="<?php echo get_theme_mod('si_facebook') ?>"><i class="fab fa-facebook-f"></i></a></li>
@@ -36,15 +34,12 @@
 						</ul>
 						</div>
 					</div>
-	
-		
-
 			</div>
 		</div>
-
-
 <nav id="navigation" class="navbar navbar-expand-md navbar-light dir"  role="navigation">
   <div class="container pr-0">
+	  <div class="row">
+		  
     <!-- Brand and toggle get grouped for better mobile display -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -61,7 +56,9 @@
             'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
             'walker'            => new WP_Bootstrap_Navwalker(),
         ) );
-        ?>
-    </div>
+		?>
+	
+	</div>
+	</div>
 </nav>	
 	<div id="content" class="site-content">
