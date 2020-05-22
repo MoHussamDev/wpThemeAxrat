@@ -9879,6 +9879,8 @@ a {
         display: none; } }
     #topBar .f-main :nth-child(2).f-main-wrapper .f-main-content .social-icons li {
       margin-left: 1rem; }
+      #topBar .f-main :nth-child(2).f-main-wrapper .f-main-content .social-icons li a {
+        font-size: 14px !important; }
     @media (max-width: 991.98px) {
       #topBar .f-main :nth-child(2).f-main-wrapper {
         width: 100%; }
