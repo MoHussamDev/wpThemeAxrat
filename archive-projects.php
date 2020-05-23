@@ -27,8 +27,9 @@ get_header();
                 <div class="col-md-4">
                  <a href="<?= get_post_permalink($id)?>">
 
-                     <h3><?php the_title() ?></h3>
-                     <img src="<?= get_the_post_thumbnail_url($id )?>"/>
+                    <img src="<?= get_the_post_thumbnail_url($id )?>"/>
+                    <h3><?php the_title() ?></h3>
+                    <?= $category ?>
                     </div>
                     </a>   
                     <?php
