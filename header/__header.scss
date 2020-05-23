@@ -103,10 +103,14 @@
         }
     }
 }
+
 .admin-bar{
     #navigation {
         top: 30px !important;
         #bs-example-navbar-collapse-1{
+            #menu-primary-menu{
+                margin: 0 !important;
+            }
             #menu-main{
                 margin: 0 0 0em 0em !important;
             }
@@ -252,6 +256,7 @@
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
+                        margin: 0;
                         li {
                             width: 100%;
                             height: 40px;
@@ -301,11 +306,24 @@
     #bs-example-navbar-collapse-1{
         
         text-align: right;
-        
+        #menu-primary-menu{
+            margin: 0 !important;
+        }
             #menu-main{
                 margin: 0 !important;
                 background: white;
             }
         
+    }
+}
+#navigation {
+    top: 30px !important;
+    #bs-example-navbar-collapse-1{
+        #menu-primary-menu{
+            margin: 0 !important;
+        }
+        #menu-main{
+            margin: 0 0 0em 0em !important;
+        }
     }
 }
