@@ -10561,3 +10561,26 @@ a {
     background: #22a6b3; }
     #serviceCards .card:hover .image div {
       background-image: var(--icon-hover); }
+
+#projects .projectCard {
+  text-decoration: none;
+  overflow: hidden; }
+  #projects .projectCard .card-block {
+    width: 350px;
+    height: 230px;
+    overflow: hidden; }
+    #projects .projectCard .card-block img {
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      -moz-transition: all 1s;
+      transition: all 1s; }
+    #projects .projectCard .card-block img:hover {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
+  #projects .projectCard h5 {
+    text-align: right; }

@@ -46,8 +46,10 @@ while ( $the_query->have_posts() ) : $the_query->the_post();
 
 ?>
 <a href="<?=the_permalink()?>"class='projectCard col-md-<?= $cols['value']?>'>
+<div class="card-block">
 <img src="<?=the_post_thumbnail_url()?>" alt="">
-    <h2><?php the_title(); ?></h2>
+</div>
+<h5><?php the_title(); ?></h5>
 </a>
 
 <?php endwhile;  wp_reset_postdata();?>
