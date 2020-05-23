@@ -48,7 +48,7 @@ get_header();
 					include get_template_directory( ).'/page-builder/logos/logos.php';
 					break;
 					case 'projects': 
-					include get_template_directory( ).'/page-builder/portfolio/portfolio.php';
+					include get_template_directory( ).'/page-builder/projects/projects.php';
 					break;
 					default:
 					echo "No Content Here";
