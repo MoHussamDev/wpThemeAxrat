@@ -1340,7 +1340,7 @@ if( function_exists('acf_add_local_field_group') ):
                     'placeholder' => '',
                 ),  
                 array(
-                    'key' => 'field_5ebf4fe270e96',
+                    'key' => 'field_5ebf4fb6270e96',
                     'label' => 'columns',
                     'name' => 'columns',
                     'type' => 'radio',
