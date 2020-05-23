@@ -1317,7 +1317,7 @@ if( function_exists('acf_add_local_field_group') ):
             'display' => 'row',
             'sub_fields' => array(
                   array(
-                    'key' => 'field_5effe363e0eee',
+                    'key' => 'field_5enfe363e0eee',
                     'label' => 'custom class',
                     'name' => 'custom_class',
                     'type' => 'select',
