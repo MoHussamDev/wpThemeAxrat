@@ -10286,7 +10286,8 @@ a {
   .dir #bs-example-navbar-collapse-1 {
     text-align: right; }
     .dir #bs-example-navbar-collapse-1 #menu-primary-menu {
-      margin: 0 !important; }
+      margin: 0 !important;
+      background: #ffffff; }
     .dir #bs-example-navbar-collapse-1 #menu-main {
       margin: 0 !important;
       background: white; }
