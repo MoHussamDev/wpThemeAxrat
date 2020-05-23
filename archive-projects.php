@@ -12,34 +12,36 @@ get_header();
 
 	<div id="primary" class="content-area">
 	<main id="main" class="site-main">
-    <div class="container">
-        <div class="row">
-
+    <section id="allProjects">
+        <div class="container">
+            <div class="row">
             <?php if ( have_posts() ) : ?>
-                
-                
                 <?php
 			/* Start the Loop */
 			while ( have_posts() ) :
                 the_post();
-                $title = the_title();
-                $thumb = the_post_thumbnail();
-                ?>
+                $id = get_the_ID() ;
+                $category = get_service_cat($id);
+            
+?>
                 <div class="col-md-4">
-                    
-                    <h1><?=$title ?></h1>
-                    <img src="<?=$thumb?>" alt="">
-                </div>
-                <?php
+                 <a href="<?= get_post_permalink($id)?>">
 
-			endwhile;
-            
-            
-            endif;
-            ?>
-</div>
+                     <h3><?php the_title() ?></h3>
+                     <img src="<?= get_the_post_thumbnail_url($id )?>"/>
+                    </div>
+                    </a>   
+                    <?php
 
+endwhile;
+
+
+endif;
+?>
+    </div>
+    
 </div>
+</section>
 </main><!-- #main -->
 </div><!-- #primary -->
 

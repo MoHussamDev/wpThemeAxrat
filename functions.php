@@ -163,6 +163,9 @@ require get_template_directory() . '/inc/customizer.php';
 // add Custom Feild 
 
 require get_template_directory() . '/inc/add_acf_feilds.php';
+
+// custom Functions 
+require get_template_directory() . '/inc/custom_functions.php';
 /**
  * Load Jetpack compatibility file.
  */
@@ -174,7 +177,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 function register_navwalker(){
 	if ( ! file_exists( get_template_directory() . '/class-wp-bootstrap-navwalker.php' ) ) {
 		// File does not exist... return an error.
-	
+		
 		return new WP_Error( 'class-wp-bootstrap-navwalker-missing', __( 'It appears the class-wp-bootstrap-navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
 	} else {
 		// File exists... require it.
@@ -188,16 +191,16 @@ add_action( 'after_setup_theme', 'register_navwalker' );
  */
 function reset_editor()
 {
-     global $_wp_post_type_features;
-
-     $post_type="page";
-     $feature = "editor";
-     if ( !isset($_wp_post_type_features[$post_type]) )
-     {
-
-     }
-     elseif ( isset($_wp_post_type_features[$post_type][$feature]) )
-     unset($_wp_post_type_features[$post_type][$feature]);
+	global $_wp_post_type_features;
+	
+	$post_type="page";
+	$feature = "editor";
+	if ( !isset($_wp_post_type_features[$post_type]) )
+	{
+		
+	}
+	elseif ( isset($_wp_post_type_features[$post_type][$feature]) )
+	unset($_wp_post_type_features[$post_type][$feature]);
 }
 
 add_action("init","reset_editor");
