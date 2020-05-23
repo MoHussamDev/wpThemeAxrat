@@ -166,6 +166,8 @@ require get_template_directory() . '/inc/add_acf_feilds.php';
 
 // custom Functions 
 require get_template_directory() . '/inc/custom_functions.php';
+// custom Functions 
+require get_template_directory() . '/inc/shortcodes/shortcode.php';
 /**
  * Load Jetpack compatibility file.
  */
