@@ -106,7 +106,10 @@
 
 .admin-bar{
     #navigation {
-        top: 30px !important;
+        top: 0px !important;
+        @include media-breakpoint-up(md){
+            top: 30px !important;
+        }
         #bs-example-navbar-collapse-1{
             #menu-primary-menu{
                 margin: 0 !important;
@@ -314,18 +317,5 @@
                 background: white; 
                        }
         
-    }
-}
-#navigation {
-    top: 30px !important;
-    
-
-    #bs-example-navbar-collapse-1{
-        #menu-primary-menu{
-            margin: 0 !important;
-        }
-        #menu-main{
-            margin: 0 0 0em 0em !important;
-        }
     }
 }
