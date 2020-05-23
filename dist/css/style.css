@@ -10008,7 +10008,7 @@ a {
   position: sticky;
   top: 0;
   height: 72px;
-  z-index: 50000000;
+  z-index: 50000;
   background: white; }
   #navigation .row {
     width: 100%;
@@ -10289,7 +10289,10 @@ a {
       background: white; }
 
 #navigation {
-  top: 30px !important; }
+  top: 30px !important;
+  -webkit-box-shadow: 5px 10px #888888;
+  -moz-box-shadow: 5px 10px #888888;
+  box-shadow: 5px 10px #888888; }
   #navigation #bs-example-navbar-collapse-1 #menu-primary-menu {
     margin: 0 !important; }
   #navigation #bs-example-navbar-collapse-1 #menu-main {
