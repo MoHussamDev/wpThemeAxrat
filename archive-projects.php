@@ -12,6 +12,9 @@ get_header();
 
 	<div id="primary" class="content-area">
 	<main id="main" class="site-main">
+     
+    
+
     <section id="allProjects">
         <div class="container">
             <div class="row">
@@ -25,13 +28,13 @@ get_header();
             
 ?>
                 <div class="col-md-4">
-                 <a href="<?= get_post_permalink($id)?>">
+                <a href="<?= get_post_permalink($id)?>">
 
-                    <img src="<?= get_the_post_thumbnail_url($id )?>"/>
+                    <img src="<?= get_the_post_thumbnail_url($id)?>"/>
                     <h3><?php the_title() ?></h3>
                     <?= $category ?>
-                    </div>
-                    </a>   
+                </a>   
+                </div>
                     <?php
 
 endwhile;

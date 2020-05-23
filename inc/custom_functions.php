@@ -6,7 +6,7 @@ function get_service_cat($id){
     
         $output = '';
         foreach($terms_list as $term){
-            $output .=  '<a href='. get_term_link($term) . '>'.$term->name.'</a>';
+            $output .=  '<a class="service" href='. get_term_link($term) . '>'.$term->name.'</a>';
         }
     }else{
         $output = '';
