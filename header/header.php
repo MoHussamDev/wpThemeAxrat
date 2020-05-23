@@ -36,7 +36,7 @@
 					</div>
 			</div>
 		</div>
-<nav id="navigation" class="navbar navbar-expand-md navbar-light dir"  role="navigation">
+<nav id="navigation" class="navbar navbar-expand-md  dir"  role="navigation">
   <div class="container pr-0">
 	  <div class="row">
 		  

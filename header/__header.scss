@@ -121,7 +121,7 @@
     position: sticky;
     top: 0;
     height: 72px;
-    z-index: 50000000;
+    z-index: 50000;
     background: white;
     .row{
         width: 100%;
@@ -318,6 +318,8 @@
 }
 #navigation {
     top: 30px !important;
+    box-shadow: 5px 10px #888888;
+
     #bs-example-navbar-collapse-1{
         #menu-primary-menu{
             margin: 0 !important;
