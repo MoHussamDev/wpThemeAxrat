@@ -30,8 +30,8 @@ get_header();
                     <img src="<?= get_the_post_thumbnail_url($id )?>"/>
                     <h3><?php the_title() ?></h3>
                     <?= $category ?>
-                    </div>
                     </a>   
+                    </div>
                     <?php
 
 endwhile;
