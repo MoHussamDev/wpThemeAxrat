@@ -1,11 +1,16 @@
 #serviceCards{
     .card{
-        border: 0;
-        display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 5rem;
-    position: relative;
-    height: 250px;
+       transform: scale(0.9);
+       border: 0;
+       display: flex;
+   flex-direction: row-reverse;
+   margin-bottom: 5rem;
+   position: relative;
+   height: auto;     
+    @include media-breakpoint-up(md){
+        height: 250px;  
+        transform: scale(1);          
+    }
     .image{
         height: 80px;
         width:80px;

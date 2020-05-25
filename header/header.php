@@ -36,15 +36,16 @@
 					</div>
 			</div>
 		</div>
-<nav id="navigation" class="navbar navbar-expand-md  dir"  role="navigation">
-  <div class="container pr-0">
-	  <div class="row">
+<nav id="navigation" class="navbar navbar-expand-md container navbar-light dir"  role="navigation">
+  
+
 		  
     <!-- Brand and toggle get grouped for better mobile display -->
+	<a class="navbar-brand" href="#"><?php the_custom_logo() ?></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#"><?php the_custom_logo() ?></a>
+   
         <?php
         wp_nav_menu( array(
             'theme_location'    => 'fivh-M',
@@ -58,7 +59,7 @@
         ) );
 		?>
 	
-	</div>
-	</div>
+	
+	
 </nav>	
-	<div id="content" class="site-content">
+	<div id="content" class="site-content"></div>
