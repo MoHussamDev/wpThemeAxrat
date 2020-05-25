@@ -126,6 +126,9 @@
     height: 72px;
     z-index: 50000;
     background: white;
+    .navbar-brand{
+        display: none;
+    }
     .row{
         width: 100%;
         margin: 0;

@@ -10013,6 +10013,8 @@ a {
   height: 72px;
   z-index: 50000;
   background: white; }
+  #navigation .navbar-brand {
+    display: none; }
   #navigation .row {
     width: 100%;
     margin: 0; }
@@ -10413,7 +10415,11 @@ a {
     text-align: right; }
   #primaryContent #inner-wrapper .primary-content--wysiwyg .check-list {
     list-style: none;
-    position: relative; }
+    position: relative;
+    margin: 0; }
+    @media (min-width: 768px) {
+      #primaryContent #inner-wrapper .primary-content--wysiwyg .check-list {
+        margin: 0 0 1.5em 3em; } }
     #primaryContent #inner-wrapper .primary-content--wysiwyg .check-list li:before {
       content: "\f14a";
       position: absolute;

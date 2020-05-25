@@ -36,8 +36,10 @@
 					</div>
 			</div>
 		</div>
-<nav id="navigation" class="navbar navbar-expand-md container navbar-light dir"  role="navigation">
+<nav id="navigation" class="navbar navbar-expand-md  navbar-light dir"  role="navigation">
   
+<div class="container">
+
 
 		  
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -59,7 +61,7 @@
         ) );
 		?>
 	
-	
+	</div>
 	
 </nav>	
 	<div id="content" class="site-content"></div>

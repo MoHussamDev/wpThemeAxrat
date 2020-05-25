@@ -39,6 +39,10 @@
                       .check-list{
                           list-style: none;
                           position:relative;
+                          margin: 0;
+                          @include media-breakpoint-up(md){
+                            margin: 0 0 1.5em 3em;
+                        }
                           li{
                           &:before{
                             content: "\f14a";
